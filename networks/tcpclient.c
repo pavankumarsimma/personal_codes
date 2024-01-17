@@ -39,7 +39,7 @@ int main()
     	*/
 
 	serv_addr.sin_family	= AF_INET;
-	inet_aton("127.0.0.1", &serv_addr.sin_addr);
+	inet_aton("", &serv_addr.sin_addr);
 	serv_addr.sin_port	= htons(20000);
 
 	/* With the information specified in serv_addr, the connect()
